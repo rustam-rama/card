@@ -1,0 +1,73 @@
+.main
+	padding-top: 65px
+	padding-bottom: 60px
+	background: $text-color-dark url(../img/main/main-bg.jpg) center no-repeat
+	background-size: cover
+	color: $text-color-light
+
+	/* Оформление главной картинки */
+	&-img
+		position: relative
+		left: -29%
+		/* круг сзади на картинке с коробками */
+		&::before
+			content: ""
+			position: absolute
+			left: 50%
+			margin-left: -82px
+			width: 390px
+			height: 390px
+			border: 1px solid #ffffff
+			border-radius: 50%
+			z-index: -2
+
+	/* Заголовок */
+	&-text
+		&__title
+			margin-top: 0
+			margin-bottom: 18px
+			font-size: 41px
+			font-weight: 700
+		&__subtitle
+			margin-bottom: 24px
+			font-size: 28px
+			font-weight: 400
+
+		/* секция form */
+
+.main-form
+	background-color: rgba(255, 255, 255, 0.2)
+	padding-left: 27px
+	border-radius: 3px
+	&__title
+		width: 80%
+		padding-top: 28px
+		padding-bottom: 20px
+		font-size: 20px
+		font-weight: 300
+		line-height: 30px
+		&-important
+			font-weight: 700
+			text-transform: uppercase
+	&__input
+		min-width: 60%
+		margin-right: 10px
+		font-size: 14px
+		font-weight: 300
+		line-height: 50px
+		text-indent: 25px 
+		border-radius: 4px
+		outline: none
+		border: none
+		color: $text-color-dark
+	&__button
+		padding: 17px 20px
+		font-size: 15px
+		font-weight: 400
+	&__small
+		padding-left: 25px
+		padding-top: 12px
+		padding-bottom: 28px
+		display: block
+		font-size: 14px
+		font-weight: 300

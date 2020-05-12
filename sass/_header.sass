@@ -1,0 +1,90 @@
+.header-nav
+	position: fixed
+	background-color: rgba($text-color-dark, 1)
+	z-index: 999
+	width: 100vw	
+	&__menu
+		display: none
+	&__links
+		list-style: none
+		display: flex
+		justify-content: space-between
+		margin: 12px 0
+		padding: 0
+		li 
+			padding-right: 17px
+			border-right: 1px dotted rgba(255, 255, 255, 0.2)
+			color: $text-color-light
+			font-size: 12px
+			font-weight: 400
+			text-transform: uppercase
+			a
+				&:hover
+					color: $active-color
+				&:active
+					color: red
+				text-decoration: none
+				color: $text-color-light
+			&:last-child
+				border: none
+				padding-right: 0
+				
+.header-communications
+	padding-top: 50px
+	padding-bottom: 15px
+	&__logo
+		&-menu
+			display: none
+		&-transform
+			background: url(../img/header/cardboard-logo.png) center no-repeat
+			width: 191px
+			height: 61px
+			display: flex
+			align-items: center
+
+	&__contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+	&__contacts-phone
+		padding-left: 13px
+		padding-right: 13px
+		&s
+			display: flex
+			color: $text-color-dark
+			font-size: 22px
+			font-weight: 500
+		a
+			&:hover
+			color: $text-color-dark
+			text-decoration: none
+
+	&__icon-phone
+		vertical-align: middle
+		padding-right: 7px
+
+	&__contacts-button
+		padding: 13px 20px
+
+
+.contacts-subsidiary-class
+	border-left: 1px solid rgba(0, 0, 0, 0.2)
+	margin-right: 14px
+
+
+@keyframes move
+	from
+		opacity: 0
+		margin-bottom: -300px
+	to
+		opacity: 0.7
+		margin-bottom: 0px
+
+@keyframes rotate
+	from
+		transform: rotateY(90deg)
+	to
+		transform: rotateY(0deg)
+
+.animate
+	animation: move 0.5s 400ms linear, rotate 0.6s 900ms linear

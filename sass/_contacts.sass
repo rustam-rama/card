@@ -1,0 +1,60 @@
+.contacts
+	position: relative
+	color: $text-color-dark
+	&-title
+		display: none
+	&-block
+		position: absolute
+		top: 14%
+		left: 14%
+		background-color: #ffffff
+		padding-top: 33px
+		padding-bottom: 39px
+		padding-left: 62px
+		padding-right: 40px
+		z-index: 9
+		&__title
+			display: block
+			font-size: 18px
+			font-weight: 500
+			margin-bottom: 3px
+			margin-top: 10px
+		&__text
+		&__adress
+			margin-bottom: 30px
+			&::before
+				content: url(../img/contacts/contacts-icon-adress.png)
+				position: absolute
+				top: 48px
+				left: 10%
+		&__phone
+			margin-bottom: 14px
+			a
+				display: block				
+				&:hover
+					color: $active-color
+				text-decoration: none
+				color: $text-color-dark
+			&::before
+				content: url(../img/contacts/contacts-icon-phone.png)
+				position: absolute
+				top: 175px
+				left: 10%
+		&__cta
+			.contacts-button
+				min-width: 160px
+				height: 45px
+				margin-bottom: 15px
+		&__mail
+			a
+				&:hover
+					color: $active-color
+				text-decoration: none
+				color: $text-color-dark
+			&::before
+				content: url(../img/contacts/contacts-icon-mail.png)
+				position: absolute
+				top: 321px
+				left: 10%
+
+

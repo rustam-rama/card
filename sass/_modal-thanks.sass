@@ -1,0 +1,54 @@
+.overlay-thanks
+	position: fixed
+	display: none
+	top: 0
+	width: 100%
+	height: 100%
+	z-index: 300
+	background-color: rgba(0, 0, 0, 0.9)
+	.popup-thanks
+		position: fixed
+		display: block
+		left: 50%
+		top: 100px
+		width: 750px
+		transform: translateX(-50%)
+
+		&-wrapper
+			background-color: #373737
+			padding: 35px 90px 49px 84px
+			color: $text-color-light
+
+		&__title
+			display: block
+			width: 100%
+			min-height: 68px
+			margin: 0
+			background-color: #ff9d00
+			color: $text-color-light
+			text-transform: uppercase
+			line-height: 68px
+			font-size: 24px
+			font-weight: 400
+			text-align: center
+
+		&__text
+			font-size: 24px
+			font-weight: 300
+			text-align: center
+			color: $text-color-light
+
+			.brake
+				display: block
+				margin-top: 25px
+
+		.popup-close
+			position: absolute
+			right: -20px
+			top: -30px
+			font-size: 35px
+			color: $text-color-light
+			font-weight: 300
+			cursor: pointer
+
+
